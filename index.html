@@ -53,6 +53,8 @@ Current Year: 1975 | Waste Score: (print: $wasteScore) | Proliferation Risk: (pr
 
 &lt;img src=&quot;https://i.imgur.com/CzMM8Gh.jpeg&quot; width=&quot;100%&quot;&gt;
 
+You are Dr. Elena Voss, senior nuclear policy advisor in the Ford Administration. It is January 1975. A major policy decision point has arrived regarding thorium-based nuclear technology.
+
 Your father was a naval engineer who lost friends when the USS Thresher sank in 1963. He spent the rest of his career pushing for safer reactor designs, and he instilled in you a fierce belief that nuclear power could be both revolutionary and responsible. You have risen through the ranks to a position where YOU are now empowered to guide our future, and you have just received a classified briefing at Oak Ridge. The molten-salt thorium team has just shown you data that could change everything: 
 
 - Waste that decays in centuries, not millennia; 
@@ -139,15 +141,18 @@ Waste is now measured in centuries instead of millennia, and the gamma-emitting 
 (set: $wasteScore to $wasteScore + 25)(set: $prolifRisk to $prolifRisk - 20)
 Current Year: 2026
 
-&lt;img src=&quot;https://i.imgur.com/6wAmlKF.png&quot; width=&quot;100%&quot;&gt; 
+&lt;img src=&quot;https://i.imgur.com/INv1QIT.jpeg&quot; width=&quot;100%&quot;&gt; 
 
-The strong verification regime and technical breakthroughs created a genuine thorium-powered future. Abundant clean energy, safe naval propulsion, and dramatically reduced waste define the 21st century.
+A strong verification regime and technical breakthroughs created a genuine thorium-powered future. Abundant clean energy, safe naval propulsion, and dramatically reduced waste define the 21st century.
 
 Your daughter Maya now works on global energy policy and tells you, “Mom, you helped make nuclear something people could believe in again.”
+
+Dr. Elena Voss is remembered as the visionary architect of the Thorium Accord — the leader who turned one of the most intractable wicked problems of the nuclear age into a lasting legacy of clean, abundant, and proliferation-resistant energy for generations to come.
 
 [[View full Policy Scorecard-&gt;Policy Scorecard]]
 [[Play again from 1975-&gt;Start]]
 
+&lt;img src=&quot;https://i.imgur.com/6wAmlKF.png&quot; width=&quot;100%&quot;&gt; 
 Image source: https://www.linkedin.com/pulse/norways-energy-revolution-powering-future-thorium-peter-lindholm-gujyf/</tw-passagedata><tw-passagedata pid="8" name="Dystopia Risk" tags="" position="2100,600" size="100,100">:: Dystopia Risk
 (set: $wasteScore to $wasteScore - 25)(set: $prolifRisk to $prolifRisk + 25)
 Current Year: 2026
@@ -160,8 +165,7 @@ Corrosion disasters, proliferation leaks, and public backlash turned thorium int
 [[Play again from 1975-&gt;Start]]
 
 &lt;img src=&quot;https://i.imgur.com/f44w14z.jpeg&quot; width=&quot;100%&quot;&gt; 
-Image source: https://www.reddit.com/r/Fallout2d20/comments/1nkf7ob/
-whats_your_lore_on_why_the_worlds_still_a/#lightbox</tw-passagedata><tw-passagedata pid="9" name="Mixed Ending" tags="" position="1500,800" size="100,100">:: Mixed Ending
+Image source: https://www.reddit.com/r/Fallout2d20</tw-passagedata><tw-passagedata pid="9" name="Mixed Ending" tags="" position="1500,800" size="100,100">:: Mixed Ending
 (set: $wasteScore to $wasteScore + 10)(set: $prolifRisk to $prolifRisk + 5)
 Current Year: 2026
 
@@ -169,7 +173,7 @@ Current Year: 2026
 
 Thorium provides 18 % of U.S. electricity and powers a new generation of quiet nuclear submarines, yet public trust remains fragile and international tensions over fuel supply persist. Thorium delivered meaningful wins on waste and safety, but political compromises and lingering technical issues kept the full utopia just out of reach. 
 
-Elena Voss is remembered as a thoughtful bridge-builder in a wicked-problem world.
+Dr. Elena Voss is remembered as a thoughtful bridge-builder in a wicked-problem world.
 
 [[View full Policy Scorecard-&gt;Policy Scorecard]]
 [[Play again from 1975-&gt;Start]]</tw-passagedata><tw-passagedata pid="10" name="TMI 1979" tags="" position="1000,0" size="100,100">:: TMI 1979
@@ -259,15 +263,16 @@ You testify again — this time as a recognized global expert. Maya, now a young
 &lt;h2&gt;Policy Impact Report – 2026&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Dr. Elena Voss’s Legacy&lt;/strong&gt;&lt;/p&gt;
 
-Waste Reduction Score: &lt;strong&gt;(print: $wasteScore) / 100&lt;/strong&gt;&lt;br&gt;
+Waste Reduction Score: &lt;strong&gt;(print: $wasteScore) / 100&lt;/strong&gt;
 (if: $wasteScore &gt; 70)[Excellent – long-lived waste reduced to centuries.]  
 (if: $wasteScore &gt; 50 and $wasteScore &lt; 71)[Moderate progress – waste still a challenge but better than baseline.]  
 (if: $wasteScore &lt; 51)[Concerning – legacy waste issues remain.]
 
-Proliferation Risk Score: &lt;strong&gt;(print: $prolifRisk) / 100&lt;/strong&gt;&lt;br&gt;
+Proliferation Risk Score: &lt;strong&gt;(print: $prolifRisk) / 100&lt;/strong&gt;
 (if: $prolifRisk &lt; 40)[Strong non-proliferation barriers in place — thorium could become a model for future arms-control treaties.]  
 (if: $prolifRisk &gt; 39 and $prolifRisk &lt; 61)[Balanced but fragile international regime.]  
 (if: $prolifRisk &gt; 60)[High risk – “thorium wars” or diversion concerns remain.]
+
 
 [[Return to Start-&gt;Start]]
 &lt;/div&gt;
