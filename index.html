@@ -50,6 +50,7 @@ h2 {
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1500,200" size="100,100">:: Start
 (set: $wasteScore to 50)(set: $prolifRisk to 50)
 Current Year: 1975 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/CzMM8Gh.jpeg&quot; width=&quot;100%&quot;&gt;
 
 Your father was a naval engineer who lost friends when the USS Thresher sank in 1963. He spent the rest of his career pushing for safer reactor designs, and he instilled in you a fierce belief that nuclear power could be both revolutionary and responsible. You have risen through the ranks to a position where YOU are now empowered to guide our future, and you have just received a classified briefing at Oak Ridge. The molten-salt thorium team has just shown you data that could change everything: 
@@ -101,9 +102,8 @@ The world watches. No single country dominates.
 [[Keep the results classified and double down on U.S.-only development-&gt;Naval Thresher Decision]]
 
 </tw-passagedata><tw-passagedata pid="4" name="International Accord" tags="" position="1900,400" size="100,100">:: International Accord
-Current Year: 1991 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
-
 (set: $wasteScore to $wasteScore + 8)(set: $prolifRisk to $prolifRisk - 15)
+Current Year: 1991 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
 
 &lt;img src=&quot;https://i.imgur.com/qs9Kf9E.jpeg&quot; width=&quot;100%&quot;&gt; 
 
@@ -145,7 +145,7 @@ The strong verification regime and technical breakthroughs created a genuine tho
 
 Your daughter Maya now works on global energy policy and tells you, “Mom, you helped make nuclear something people could believe in again.”
 
-[[See your Policy Scorecard-&gt;Policy Scorecard]]
+[[View full Policy Scorecard-&gt;Policy Scorecard]]
 [[Play again from 1975-&gt;Start]]
 
 Image source: https://www.linkedin.com/pulse/norways-energy-revolution-powering-future-thorium-peter-lindholm-gujyf/</tw-passagedata><tw-passagedata pid="8" name="Dystopia Risk" tags="" position="2100,600" size="100,100">:: Dystopia Risk
@@ -171,10 +171,11 @@ Thorium provides 18 % of U.S. electricity and powers a new generation of quiet n
 
 Elena Voss is remembered as a thoughtful bridge-builder in a wicked-problem world.
 
-[[See your Policy Scorecard-&gt;Policy Scorecard]]
+[[View full Policy Scorecard-&gt;Policy Scorecard]]
 [[Play again from 1975-&gt;Start]]</tw-passagedata><tw-passagedata pid="10" name="TMI 1979" tags="" position="1000,0" size="100,100">:: TMI 1979
 (set: $wasteScore to $wasteScore + 15)(set: $prolifRisk to $prolifRisk - 12)
 Current Year: 1979 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/IxKDYK7.jpeg&quot; width=&quot;100%&quot;&gt; 
 
 The Three Mile Island partial meltdown dominates every headline.
@@ -213,6 +214,7 @@ But Maya, now in college, calls you in tears: “Mom, they’re saying all nucle
 
 [[Double down on the International Thorium Accord-&gt;International Accord]]
 [[Keep U.S. technology classified to maintain strategic advantage-&gt;Dystopia Risk]]</tw-passagedata><tw-passagedata pid="13" name="Yucca Mountain Debate" tags="" position="1600,0" size="100,100">:: Yucca Mountain Debate
+(set: $wasteScore to $wasteScore + 10)(set: $prolifRisk to $prolifRisk - 10)
 Current Year: 1995 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
 
 &lt;img src=&quot;https://i.imgur.com/lkoIvn4.jpeg&quot; width=&quot;100%&quot;&gt;
@@ -251,7 +253,6 @@ You testify again — this time as a recognized global expert. Maya, now a young
 
 [[Highlight thorium’s passive safety as the future-&gt;Utopia Path]]
 [[Face renewed anti-nuclear protests and funding cuts-&gt;Dystopia Risk]]</tw-passagedata><tw-passagedata pid="16" name="Policy Scorecard" tags="" position="900,200" size="100,100">:: Policy Scorecard
-
 &lt;img src=&quot;https://i.imgur.com/bXTTjDO.jpeg&quot; width=&quot;100%&quot;&gt;
 
 &lt;div class=&quot;scorecard&quot;&gt;
@@ -273,7 +274,6 @@ Proliferation Risk Score: &lt;strong&gt;(print: $prolifRisk) / 100&lt;/strong&gt
 
 Thorium Futures – NERS 590 Term Project • Monee Hardesty 2026</tw-passagedata><tw-passagedata pid="17" name="How to Play" tags="" position="2100,200" size="100,100">:: How to Play
 &lt;img src=&quot;https://i.imgur.com/bftupBz.jpeg&quot; width=&quot;100%&quot;&gt;
-
 
 Welcome to **Thorium Futures** — a speculative create-your-own-adventure simulation.
 
