@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Thorium Futures.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Thorium Futures" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="965FEE33-F633-4A71-AE16-7266261A68DA" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="Thorium Futures" startnode="17" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="965FEE33-F633-4A71-AE16-7266261A68DA" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
     background: linear-gradient(#0a1f3d, #1e3a5f);
     color: #e0f0ff;
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -49,10 +49,8 @@ h2 {
     padding-bottom: 8px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1500,200" size="100,100">:: Start
 (set: $wasteScore to 50)(set: $prolifRisk to 50)
-January 1975
+Current Year: 1975 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
 &lt;img src=&quot;https://i.imgur.com/CzMM8Gh.jpeg&quot; width=&quot;100%&quot;&gt;
-
-You are Dr. Elena Voss, 38, senior nuclear policy advisor to the Ford Administration. It is January 1975.
 
 Your father was a naval engineer who lost friends when the USS Thresher sank in 1963. He spent the rest of his career pushing for safer reactor designs, and he instilled in you a fierce belief that nuclear power could be both revolutionary and responsible. You have risen through the ranks to a position where YOU are now empowered to guide our future, and you have just received a classified briefing at Oak Ridge. The molten-salt thorium team has just shown you data that could change everything: 
 
@@ -70,9 +68,10 @@ What do you recommend?
 [[Push for heavy U.S. investment in thorium MSRs and LFTRs-&gt;Heavy Investment]]
 [[Recommend only a modest pilot program-&gt;Modest Pilot]]
 [[Advocate for an immediate international Thorium Accord-&gt;International Accord]]
-[[You hesistate and decide not to advance a Thorium program-&gt;TMI 1979]]</tw-passagedata><tw-passagedata pid="2" name="Heavy Investment" tags="" position="1100,400" size="100,100">:: Heavy Investment
+[[Hesitate and decide not to advance a Thorium program-&gt;TMI 1979]]</tw-passagedata><tw-passagedata pid="2" name="Heavy Investment" tags="" position="1100,400" size="100,100">:: Heavy Investment
 (set: $wasteScore to $wasteScore + 10)(set: $prolifRisk to $prolifRisk - 5)
-1982
+Current Year: 1982 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/wf5di4k.jpeg&quot; width=&quot;100%&quot;&gt;
 
 You successfully lobby for a major 1970s commitment. 
@@ -86,7 +85,8 @@ But corrosion in the salt loops emerges as a serious engineering challenge.
 [[Continue despite corrosion problems-&gt;Corrosion Crisis]]
 [[Pause the program to solve materials issues-&gt;Technical Pause]]</tw-passagedata><tw-passagedata pid="3" name="Modest Pilot" tags="" position="1500,400" size="100,100">:: Modest Pilot
 (set: $wasteScore to $wasteScore + 5)(set: $prolifRisk to $prolifRisk - 10)
-Early-1980s
+Current Year: 1982 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/M908eyI.jpeg&quot; width=&quot;100%&quot;&gt; 
 
 A small pilot program is approved. 
@@ -101,6 +101,8 @@ The world watches. No single country dominates.
 [[Keep the results classified and double down on U.S.-only development-&gt;Naval Thresher Decision]]
 
 </tw-passagedata><tw-passagedata pid="4" name="International Accord" tags="" position="1900,400" size="100,100">:: International Accord
+Current Year: 1991 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 (set: $wasteScore to $wasteScore + 8)(set: $prolifRisk to $prolifRisk - 15)
 
 &lt;img src=&quot;https://i.imgur.com/qs9Kf9E.jpeg&quot; width=&quot;100%&quot;&gt; 
@@ -111,7 +113,8 @@ You convince the administration to propose a multilateral “Thorium Accord” m
 [[Accept weaker controls to get more countries on board-&gt;Dystopia Risk]]
 [[Negotiate a strong verification regime-&gt;Proliferation Crisis]]</tw-passagedata><tw-passagedata pid="5" name="Corrosion Crisis" tags="" position="900,600" size="100,100">:: Corrosion Crisis
 (set: $wasteScore to $wasteScore - 15)(set: $prolifRisk to $prolifRisk + 10)
-1985
+Current Year: 1985 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/NrUPEZ6.jpeg&quot; width=&quot;100%&quot;&gt;
 
 You pushed the program forward despite early engineering warnings. In 1985 a major salt-loop corrosion incident occurs at the Oak Ridge test reactor. Highly radioactive molten salt leaks into containment, triggering public panic and congressional hearings.
@@ -123,7 +126,8 @@ What do you do?
 [[Shut everything down and pivot to intensive materials research-&gt;Technical Pause]]
 [[Double down and accelerate naval applications anyway-&gt;Dystopia Risk]]</tw-passagedata><tw-passagedata pid="6" name="Technical Pause" tags="" position="1300,600" size="100,100">:: Technical Pause
 (set: $wasteScore to $wasteScore + 12)(set: $prolifRisk to $prolifRisk - 8)
-1990
+Current Year: 1990 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/HtVFdVb.jpeg&quot; width=&quot;100%&quot;&gt;
 
 You recommend a strategic pause. Engineers solve the corrosion problem with advanced Hastelloy alloys and better online reprocessing. By 1990 the U.S. has a reliable thorium MSR design.
@@ -133,7 +137,8 @@ Waste is now measured in centuries instead of millennia, and the gamma-emitting 
 [[Push the mature technology into an expanded International Thorium Accord-&gt;International Accord]]
 [[Keep the breakthrough classified for U.S. naval advantage-&gt;Yucca Mountain Debate]]</tw-passagedata><tw-passagedata pid="7" name="Utopia Path" tags="" position="1700,600" size="100,100">:: Utopia Path
 (set: $wasteScore to $wasteScore + 25)(set: $prolifRisk to $prolifRisk - 20)
-2026
+Current Year: 2026
+
 &lt;img src=&quot;https://i.imgur.com/6wAmlKF.png&quot; width=&quot;100%&quot;&gt; 
 
 The strong verification regime and technical breakthroughs created a genuine thorium-powered future. Abundant clean energy, safe naval propulsion, and dramatically reduced waste define the 21st century.
@@ -145,37 +150,46 @@ Your daughter Maya now works on global energy policy and tells you, “Mom, you 
 
 Image source: https://www.linkedin.com/pulse/norways-energy-revolution-powering-future-thorium-peter-lindholm-gujyf/</tw-passagedata><tw-passagedata pid="8" name="Dystopia Risk" tags="" position="2100,600" size="100,100">:: Dystopia Risk
 (set: $wasteScore to $wasteScore - 25)(set: $prolifRisk to $prolifRisk + 25)
-2026
-&lt;img src=&quot;https://i.imgur.com/iPUo4Nj.jpeg&quot; width=&quot;100%&quot;&gt; 
+Current Year: 2026
+
+&lt;img src=&quot;https://i.imgur.com/t1hakeG.jpeg&quot; width=&quot;100%&quot;&gt; 
 
 Corrosion disasters, proliferation leaks, and public backlash turned thorium into a cautionary tale. Maya, now a journalist, covers the “thorium wars” and asks you quietly, “Was there a path we missed?”
 
-[[See your Policy Scorecard-&gt;Policy Scorecard]]
-[[Play again from 1975-&gt;Start]]</tw-passagedata><tw-passagedata pid="9" name="Mixed Ending" tags="" position="1500,800" size="100,100">:: Mixed Ending
+[[View full Policy Scorecard-&gt;Policy Scorecard]]
+[[Play again from 1975-&gt;Start]]
+
+&lt;img src=&quot;https://i.imgur.com/f44w14z.jpeg&quot; width=&quot;100%&quot;&gt; 
+Image source: https://www.reddit.com/r/Fallout2d20/comments/1nkf7ob/
+whats_your_lore_on_why_the_worlds_still_a/#lightbox</tw-passagedata><tw-passagedata pid="9" name="Mixed Ending" tags="" position="1500,800" size="100,100">:: Mixed Ending
 (set: $wasteScore to $wasteScore + 10)(set: $prolifRisk to $prolifRisk + 5)
-2026
+Current Year: 2026
+
 &lt;img src=&quot;https://i.imgur.com/NrutEfZ.jpeg&quot; width=&quot;100%&quot;&gt;
 
-Thorium delivered meaningful wins on waste and safety, but political compromises and lingering technical issues kept the full utopia just out of reach. Elena Voss is remembered as a thoughtful bridge-builder in a wicked-problem world.
+Thorium provides 18 % of U.S. electricity and powers a new generation of quiet nuclear submarines, yet public trust remains fragile and international tensions over fuel supply persist. Thorium delivered meaningful wins on waste and safety, but political compromises and lingering technical issues kept the full utopia just out of reach. 
+
+Elena Voss is remembered as a thoughtful bridge-builder in a wicked-problem world.
 
 [[See your Policy Scorecard-&gt;Policy Scorecard]]
 [[Play again from 1975-&gt;Start]]</tw-passagedata><tw-passagedata pid="10" name="TMI 1979" tags="" position="1000,0" size="100,100">:: TMI 1979
 (set: $wasteScore to $wasteScore + 15)(set: $prolifRisk to $prolifRisk - 12)
-March 1979
+Current Year: 1979 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
 &lt;img src=&quot;https://i.imgur.com/IxKDYK7.jpeg&quot; width=&quot;100%&quot;&gt; 
 
 The Three Mile Island partial meltdown dominates every headline.
 
-You are second guessing your hesitation on pushing thorium early. But your team has additional small-scale MSR test data showing passive drain-tank safety, with some limited corrosion concerns. You testify before Congress: “This accident would not have happened with molten-salt technology.”
+For the first time, you wonder if hesitation was the real mistake. But your team has additional small-scale MSR test data showing passive drain-tank safety, with some limited corrosion concerns. You testify before Congress: “This accident would not have happened with molten-salt technology.”
 
 Public fear is still intense, but your credibility rises.
 
 Your daughter Maya watches the news with wide eyes. You feel the weight of her fear every night. No one died during this incident, but future incidents might not be so near miss.
 
-[[You&#39;re inspired by this crisis to accelerate full thorium funding-&gt;Heavy Investment]]
+[[Inspired by this crisis, you push to accelerate full thorium funding-&gt;Heavy Investment]]
 [[Focus on public communication and focus on further corrosion safety assessments-&gt;Technical Pause]]</tw-passagedata><tw-passagedata pid="11" name="Naval Thresher Decision" tags="" position="1200,0" size="100,100">:: Naval Thresher Decision
 (set: $wasteScore to $wasteScore + 10)(set: $prolifRisk to $prolifRisk - 8)
-1983
+Current Year: 1983 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/iHpda4d.jpeg&quot; width=&quot;100%&quot;&gt;
 
 On the 20th anniversary, the Navy is still shaped by the 1963 Thresher disaster and Rickover’s PWR legacy. Officers from the Pentagon and Naval Reactors approach you quietly. They want compact, safe propulsion that doesn’t require frequent refueling.
@@ -185,10 +199,11 @@ You see a chance to honor your father’s work.
 [[Champion thorium for next-generation submarines-&gt;Corrosion Crisis]]
 [[Stick with proven PWRs for now to avoid political risk-&gt;Chernobyl Reaction]]</tw-passagedata><tw-passagedata pid="12" name="Chernobyl Reaction" tags="" position="1400,0" size="100,100">:: Chernobyl Reaction
 (set: $wasteScore to $wasteScore + 18)(set: $prolifRisk to $prolifRisk - 10)
-April 1986
+Current Year: 1986 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/IxKDYK7.jpeg&quot; width=&quot;100%&quot;&gt; 
 
-The Chernobyl disaster unfolds in the Soviet Union.
+April 1986. The Chernobyl disaster unfolds in the Soviet Union.
 
 You are in the Situation Room when the first reports arrive. Because the U.S. has working thorium MSRs, you can truthfully say, “Our design philosophy makes this kind of runaway reaction physically impossible.”
 
@@ -198,19 +213,21 @@ But Maya, now in college, calls you in tears: “Mom, they’re saying all nucle
 
 [[Double down on the International Thorium Accord-&gt;International Accord]]
 [[Keep U.S. technology classified to maintain strategic advantage-&gt;Dystopia Risk]]</tw-passagedata><tw-passagedata pid="13" name="Yucca Mountain Debate" tags="" position="1600,0" size="100,100">:: Yucca Mountain Debate
-Mid-1990s
+Current Year: 1995 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/lkoIvn4.jpeg&quot; width=&quot;100%&quot;&gt;
 
 You had decided to keep this technology classified, so it wasn&#39;t widely adopted. Instead, over 100 uranium-fueled commercial power plants have been built.  It is now the mid-1990s and Congress is wrestling with a growing radioactive waste problem. Tense politicized debates are happening over the Yucca Mountain repository for high-level waste.
 
-Your thorium program has already slashed waste volume by more than 90% for the U.S. Navy. Better late than never, you realize that that this could be the solution. You reason that smaller, shorter-lived waste streams could be managed locally and safely, if the U.S. invests in commercial Thorium plants, but you&#39;re concerned there will be immense push back that you didn&#39;t bring this solution to light sooner.
+Your thorium program has already slashed waste volume by more than 90% for the U.S. Navy. Better late than never, you realize that this could be the solution. You reason that smaller, shorter-lived waste streams could be managed locally and safely, if the U.S. invests in commercial Thorium plants, but you&#39;re concerned there will be immense push back that you didn&#39;t bring this solution to light sooner.
 
 What do you do?
 
 [[Push for a thorium-based commercial program to mitigate waste reduction issues going forward -&gt;Mixed Ending]]
 [[Decide to keep it classified and support Yucca -&gt;Fukushima Response]]</tw-passagedata><tw-passagedata pid="14" name="Proliferation Crisis" tags="" position="1800,0" size="100,100">:: Proliferation Crisis
 (set: $wasteScore to $wasteScore + 5)(set: $prolifRisk to $prolifRisk + 15)
-2005
+Current Year: 2005 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/2lUPerF.jpeg&quot; width=&quot;100%&quot;&gt;
 
 Tensions with Iran over uranium enrichment reach a boiling point. Intelligence suggests a potential weapons program.
@@ -222,10 +239,11 @@ But back-channel pressure from hawks wants you to keep the tech secret.
 [[Advocate sharing under strict verification-&gt;Utopia Path]]
 [[Classify the technology and risk a new arms race-&gt;Dystopia Risk]]</tw-passagedata><tw-passagedata pid="15" name="Fukushima Response" tags="" position="2000,0" size="100,100">:: Fukushima Response
 (set: $wasteScore to $wasteScore + 20)(set: $prolifRisk to $prolifRisk - 18)
-March 2011
+Current Year: 2011 | Waste Score: (print: $wasteScore) | Proliferation Risk: (print: $prolifRisk)
+
 &lt;img src=&quot;https://i.imgur.com/9iS3CIc.jpeg&quot; width=&quot;100%&quot;&gt;
 
-A massive earthquake and tsunami cripple the Fukushima Daiichi plant.
+March 2011. A massive earthquake and tsunami cripple the Fukushima Daiichi plant.
 
 The Navy&#39;s mature thorium MSRs have been running safely for decades with passive cooling and no high-pressure water. The contrast is dramatic.
 
@@ -246,12 +264,31 @@ Waste Reduction Score: &lt;strong&gt;(print: $wasteScore) / 100&lt;/strong&gt;&l
 (if: $wasteScore &lt; 51)[Concerning – legacy waste issues remain.]
 
 Proliferation Risk Score: &lt;strong&gt;(print: $prolifRisk) / 100&lt;/strong&gt;&lt;br&gt;
-(if: $prolifRisk &lt; 40)[Strong non-proliferation barriers in place.]  
+(if: $prolifRisk &lt; 40)[Strong non-proliferation barriers in place — thorium could become a model for future arms-control treaties.]  
 (if: $prolifRisk &gt; 39 and $prolifRisk &lt; 61)[Balanced but fragile international regime.]  
 (if: $prolifRisk &gt; 60)[High risk – “thorium wars” or diversion concerns remain.]
 
 [[Return to Start-&gt;Start]]
-&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;/div&gt;
+
+Thorium Futures – NERS 590 Term Project • Monee Hardesty 2026</tw-passagedata><tw-passagedata pid="17" name="How to Play" tags="" position="2100,200" size="100,100">:: How to Play
+&lt;img src=&quot;https://i.imgur.com/bftupBz.jpeg&quot; width=&quot;100%&quot;&gt;
+
+
+Welcome to **Thorium Futures** — a speculative create-your-own-adventure simulation.
+
+You are **Dr. Elena Voss**, senior nuclear policy advisor in the Ford Administration, January 1975. A major policy decision point has arrived regarding thorium-based nuclear technology.
+
+**How to Play**
+- Read each passage and click the **blue links** to make your policy choices.
+- Every decision carries realistic trade-offs between waste reduction, proliferation risk, energy security, and public trust.
+- Your choices will automatically update two hidden scores: **Waste Reduction** and **Proliferation Risk**.
+- At the end of each path you will receive a **Policy Scorecard** summarizing the long-term outcome of your decisions.
+
+There are no perfect answers — only different possible futures.  
+Explore, reflect, and see what kind of 2026 you help create.
+
+[[Begin the 1975 Divergence as Dr. Elena Voss-&gt;Start]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
