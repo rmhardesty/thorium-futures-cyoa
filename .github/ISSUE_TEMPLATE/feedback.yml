@@ -1,0 +1,40 @@
+name: Feedback from Thorium Futures CYOA
+description: Thank you for playing! Share your thoughts, bugs, or suggestions.
+title: "Feedback from Thorium Futures CYOA"
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thank you for playing Thorium Futures!**  
+        Your feedback helps improve the game a lot.
+
+  - type: textarea
+    id: thoughts
+    attributes:
+      label: What did you think of the game overall?
+      description: Story, art, choices, balance, fun factor, etc.
+      placeholder: I really liked the thorium policy decisions but the dystopia ending felt too harsh...
+    validations:
+      required: true
+
+  - type: textarea
+    id: bugs
+    attributes:
+      label: Any bugs, broken links, or weird behavior?
+      description: Please include which ending or passage you were on if possible.
+      placeholder: The link in the Policy Scorecard didn't work...
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Any suggestions for new endings, decisions, or features?
+      placeholder: Maybe add a "Green New Deal" path or more tech tree options?
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Final step
+      options:
+        - label: I understand this feedback will be public on GitHub
+          required: true
